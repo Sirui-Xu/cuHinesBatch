@@ -1,9 +1,8 @@
 # cuHinesBatch
 
-### 问题理解
+### Problem Understanding
+A simulation of the behavior of the Human Brain, to solve efficiently a high number of Hines systems(neurons)
 
-算法抽象后即为一个串行的backward+forward的深度遍历。在backward过程中父节点依赖子节点的值进行更新，forward过程中子节点依赖父节点的值进行更新。我们很难挖掘父子节点之间的并行性，关键就在于如何高效地并行不同子树的遍历。
-
-
+It is actually a serial backward + forward depth traversal. In the backward process, the parent node updates according to the value of the child node, and the child node updates according to the value of the parent node in the forward process. It is difficult to mine the parallelism between parent and child nodes. The key is how to efficiently parallel traversal of different subtrees.
 
 
